@@ -12,6 +12,7 @@ Permette di creare QR Code in formato PNG o SVG e scaricarli direttamente.
 
 ## Deploy
 Il progetto è completamente statico e può essere pubblicato tramite GitHub Pages.
+(demo: https://raffaelebarlotti.github.io/qr-generator/)
 
 ## Utilizzo
 1. Inserisci l’URL
