@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Generatore di QR Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card" role="main">
+    <h1>QR Generator</h1>
+
+    <div class="field">
+      <label for="url">URL</label>
+      <input id="url" name="url" placeholder="https://example.com" aria-describedby="url-help url-error">
+      <small id="url-help" class="help">Inserisci un URL valido.</small>
+      <small id="url-error" class="error"></small>
+    </div>
+
+    <div class="field">
+      <label for="filename">Nome file</label>
+      <input id="filename" name="filename" placeholder="nome-file" aria-describedby="filename-help filename-error">
+      <small id="filename-help" class="help">Il file verrà scaricato nei Download.</small>
+      <small id="filename-error" class="error"></small>
+    </div>
+
+    <div class="field">
+      <label for="format">Formato</label>
+      <select id="format" name="format">
+        <option value="png">PNG</option>
+        <option value="svg">SVG</option>
+      </select>
+    </div>
+
+    <button aria-label="Genera e scarica il QR code" onclick="generate()">Genera QR</button>
+
+    <div id="preview" role="img" aria-label="Anteprima del QR code"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
